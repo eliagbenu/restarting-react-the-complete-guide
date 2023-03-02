@@ -1,16 +1,21 @@
+import './ExpenseItem.css';
 
 
 function ExpenseItem()
 {
-	return ( <div>
+	const expenseDate = new Date(2023,3, 2 );
+	const expenseTitle = 'An expense';
+	const expenseAmount = 45;
+
+	return ( <div className="default-item">
 		<div>
-		<h1>Title:An expense</h1>
+		<h1>Title:{expenseTitle}</h1>
 		</div>
 		<div>
-		<p>Description: This is for lesson 33</p>
+		<p>Date: {expenseDate.toISOString()}</p>
 		</div>		
 		<div>
-		<h4>Amount: 32 Ghana Cedis</h4>
+		<h4>Amount: ${expenseAmount} Ghana Cedis</h4>
 		</div>		
 		<hr/>
 		</div>
