@@ -1,5 +1,6 @@
 import './ExpenseItem.css';
 import ExpenseDate from './ExpenseDate';
+import Card from './Card';
 
 
 function ExpenseItem(props)
@@ -8,10 +9,7 @@ function ExpenseItem(props)
 	var theAmount =props.amount; 
 	var theTitle =props.title;
 
-	return ( <div className="default-item">
-				<div>
-					<h1>Title:{theTitle}</h1>
-				</div>
+	return ( <Card className="default-item">
 					<div>
 					<p>
 						<ExpenseDate
@@ -22,12 +20,18 @@ function ExpenseItem(props)
 						>
 						</ExpenseDate>
 					</p>
-					</div>		
+					</div>	
 					<div>
-						<h4>Amount: ${theAmount} Ghana Cedis</h4>
-					</div>		
+						<div>
+							<h1>Title:{theTitle}</h1>
+						</div>					
+						<div>
+							<h4>Amount: ${theAmount} Ghana Cedis</h4>
+						</div>
+					</div>
+
 				<hr/>
-		    </div>
+		    </Card>
 	 );
 
 }

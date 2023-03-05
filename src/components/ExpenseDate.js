@@ -1,4 +1,5 @@
 import './ExpenseDate.css';
+import Card from './Card';
 
 function ExpenseDate(props)
 {
@@ -8,12 +9,15 @@ function ExpenseDate(props)
 	const theDay =props.theDay.toLocaleString('en-US',{day:'2-digit'});
 	const theYear =props.theYear.getFullYear();
 
-	return (<p>
-			<div className="expense-date__date" >Date: {theDate} </div>
-			<div  className="expense-date__month" >Month: {theMonth} </div>
-			<div  className="expense-date__day" >Day: {theDay} </div>
-			<div  className="expense-date__year" >Year: {theYear} </div>
-		</p>
+	return (
+		<Card>
+			<p>
+				<div className="expense-date__date" >Date: {theDate} </div>
+				<div  className="expense-date__month" >Month: {theMonth} </div>
+				<div  className="expense-date__day" >Day: {theDay} </div>
+				<div  className="expense-date__year" >Year: {theYear} </div>
+			</p>		
+		</Card>
 	 );
 
 }
