@@ -3,7 +3,7 @@ import './App.css';
 import Expense from './components/expense/Expense';
 
 
-function App() 
+const App = () => 
 {
 
     const expenses =  [
@@ -30,7 +30,7 @@ function App()
 
   return (
     <div className="App">
-      <h2>Re-organizing components - lesson  42</h2>
+      <h2>Arrow functions - lesson  43</h2>
       <Expense items={expenses}></Expense>
     </div>
   );

@@ -1,7 +1,7 @@
 import './ExpenseDate.css';
 import Card from '../ui/Card';
 
-function ExpenseDate(props)
+const ExpenseDate = (props) =>
 {
 
 	const theDate =props.theDate.toISOString();

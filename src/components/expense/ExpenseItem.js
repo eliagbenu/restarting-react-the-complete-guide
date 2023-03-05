@@ -3,7 +3,7 @@ import ExpenseDate from './ExpenseDate';
 import Card from '../ui/Card';
 
 
-function ExpenseItem(props)
+const ExpenseItem = (props) =>
 {
 
 	var theAmount =props.amount; 
