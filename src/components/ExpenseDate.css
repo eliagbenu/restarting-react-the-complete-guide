@@ -1,0 +1,19 @@
+.expense-date__day{
+	color: #fff;
+	background-color: red;
+}
+
+.expense-date__date{
+	color: #fff;
+	background-color: orange;
+}
+
+.expense-date__month{
+	color: #fff;
+	background-color: violet;
+}
+
+.expense-date__year{
+	color: #fff;
+	background-color: green;
+}
