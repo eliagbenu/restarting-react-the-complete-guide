@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import Expense from './components/Expense';
+import Expense from './components/expense/Expense';
 
 
 function App() 
@@ -21,7 +21,7 @@ function App()
       },    
       {
         id: 'et',
-        title: 'Pens',
+        title: 'Eraser',
         amount: 43, 
         thedate: new Date(2023, 3, 10 )      
       } ,       
@@ -30,7 +30,7 @@ function App()
 
   return (
     <div className="App">
-      <h2>Lets get started - lesson  39</h2>
+      <h2>Re-organizing components - lesson  42</h2>
       <Expense items={expenses}></Expense>
     </div>
   );
